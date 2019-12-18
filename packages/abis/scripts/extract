@@ -5,13 +5,17 @@ echo "Extracting ABIs"
 # AragonOS
 mkdir -p os/abi
 mkdir -p os/artifacts
+mkdir -p os/contracts
 
 cp -R node_modules/@aragon/os/abi/. os/abi
 cp -R node_modules/@aragon/os/build/contracts/. os/artifacts
+cp -R node_modules/@aragon/os/contracts/. os/contracts
 
 # AragonID
 mkdir -p id/abi
 mkdir -p id/artifacts
+mkdir -p id/contracts
 
 cp -R node_modules/@aragon/id/abi/. id/abi
 cp -R node_modules/@aragon/id/build/contracts/. id/artifacts
+cp -R node_modules/@aragon/id/contracts/. id/contracts
